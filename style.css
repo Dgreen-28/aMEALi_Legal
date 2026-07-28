@@ -1,0 +1,182 @@
+/* aMEALi — shared styles for the public site.
+   Palette lifted from the app: cream bg, espresso ink, slate blue, tan accent. */
+
+:root {
+  --bg: #FFF9F3;
+  --card: #FDF5EC;
+  --espresso: #3F3228;
+  --slate: #7BABD2;
+  --tan: #8A6234;
+  --muted: #8C7F73;
+  --hairline: rgba(63, 50, 40, 0.12);
+  --maxw: 720px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--espresso);
+  font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---- Masthead ---------------------------------------------------------- */
+
+.masthead {
+  padding: 56px 0 28px;
+  text-align: center;
+}
+
+/* The wordmark echoes the app's launch animation, where "a" and "i" read
+   together as "ai" and MEAL grows between them. */
+.wordmark {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: clamp(34px, 7vw, 46px);
+  letter-spacing: -0.5px;
+  margin: 0;
+  color: var(--espresso);
+  text-decoration: none;
+  display: inline-block;
+}
+.wordmark .ai { color: var(--slate); }
+
+.tagline {
+  margin: 10px 0 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3.4px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.rule {
+  width: 40px;
+  height: 1px;
+  background: var(--tan);
+  border: 0;
+  margin: 22px auto;
+}
+
+/* ---- Document ---------------------------------------------------------- */
+
+.doc { padding-bottom: 72px; }
+
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 5vw, 36px);
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+
+.updated {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0 0 32px;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  margin: 40px 0 12px;
+  padding-top: 8px;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 24px 0 6px;
+  color: var(--tan);
+}
+
+p, li { color: var(--espresso); }
+p { margin: 0 0 16px; }
+ul { margin: 0 0 16px; padding-left: 22px; }
+li { margin-bottom: 8px; }
+
+a { color: var(--tan); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--espresso); }
+a:focus-visible { outline: 2px solid var(--slate); outline-offset: 3px; border-radius: 3px; }
+
+strong { font-weight: 650; }
+
+/* Callout for the things people actually need to know at a glance. */
+.note {
+  background: var(--card);
+  border: 1px solid var(--hairline);
+  border-left: 3px solid var(--slate);
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin: 0 0 28px;
+}
+.note p:last-child { margin-bottom: 0; }
+
+/* ---- Index page -------------------------------------------------------- */
+
+.lede {
+  font-size: 18px;
+  line-height: 1.65;
+  text-align: center;
+  color: var(--espresso);
+  margin: 0 auto 36px;
+  max-width: 560px;
+}
+
+.links {
+  display: grid;
+  gap: 12px;
+  margin: 0 0 48px;
+}
+
+.link-card {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--hairline);
+  border-radius: 16px;
+  padding: 18px 20px;
+  text-decoration: none;
+  color: var(--espresso);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.link-card:hover {
+  border-color: var(--slate);
+  transform: translateY(-1px);
+  color: var(--espresso);
+}
+.link-card .label {
+  font-weight: 650;
+  font-size: 17px;
+  display: block;
+}
+.link-card .desc {
+  color: var(--muted);
+  font-size: 14px;
+  display: block;
+  margin-top: 2px;
+}
+
+/* ---- Footer ------------------------------------------------------------ */
+
+.footer {
+  border-top: 1px solid var(--hairline);
+  padding: 24px 0 56px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}
+.footer a { color: var(--muted); }
+.footer nav { margin-bottom: 8px; }
+.footer nav a { margin: 0 10px; }
