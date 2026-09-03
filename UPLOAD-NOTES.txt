@@ -1,0 +1,52 @@
+STUDIO DG APPS — WEBSITE
+========================
+Drop-in replacement for Dgreen-28/Dgreen-28.github.io
+
+HOW TO UPLOAD
+-------------
+1. github.com/Dgreen-28/Dgreen-28.github.io
+2. "Add file" -> "Upload files"
+3. Drag in: index.html, support.html, privacy.html, shop.html,
+   styles.css, and the whole assets/ folder
+4. Commit. Pages redeploys in about a minute.
+
+app-ads.txt and README.md are untouched — leave them as they are.
+
+THE VOICE
+---------
+Rewritten in first person, plain and warm. The headline is
+"I make apps, and I really hope you enjoy them." The about section says
+you have a regular job and make apps in the hours around it because you
+enjoy it, and that you're glad when someone tells you they had fun with
+one. Change any of it freely — it's all plain text near the top of
+index.html.
+
+Your name "Corey" appears twice (hero paragraph, about section). If you'd
+rather stay just "Studio DG", delete those two sentences and nothing else
+breaks.
+
+THE LOOK
+--------
+- Light Carolina blue instead of the dark version. Hero sits on a soft
+  blue wash that fades into near-white.
+- The background lines are still there, front and centre: the same grid
+  and construction circles that sit behind your DG mark.
+- Carolina blue #4B9CD3 leads, emerald #0E9F6E for the small category
+  labels, your navy #131E43 for headings and the logo.
+- Poppins for headings — it's the closest match to your wordmark's
+  letterforms, so the type and the logo belong together.
+- No mono "technical" labels this time. Those were what made it read
+  like a developer built it.
+
+STILL TO DO
+-----------
+Fit Check Pro and Dates Reminders use FC / DR tiles because I don't have
+their real icons. Send me those two 1024px PNGs and I'll swap them in.
+
+ASSETS
+------
+assets/dg-mark.svg     DG monogram, currentColor, reusable
+assets/dg-lockup.svg   full lockup with STUDIO DG and the side rules
+assets/favicon.svg     tab icon
+assets/og-image.png    1200x630 social share card
+assets/icon-512.png    square app-style icon
